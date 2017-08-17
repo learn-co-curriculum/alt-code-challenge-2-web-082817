@@ -34,9 +34,9 @@ Implement all of the methods described below
 + MovieScreen#car_count
   + Returns the current number of cars at this movie screen
 + MovieScreen#at_capacity?
-  + Checks to see if this screen is at capacity for cars
+  + Returns a boolean.  The return will be true if the car count is at capacity
 + MovieScreen#add_car
-  + Adds an instance of a car to this movie screen if the movie screen is not at capacity and increases the car count by one
+  + Adds an instance of a car to this movie screen if the movie screen is not at capacity and increases the car count by one and returns the string "Enjoy!".  If the movie screen is at capacity, return a string that says 'Movie is sold out'
 + MovieScreen.all_screens
   + Returns all movie screens
 
