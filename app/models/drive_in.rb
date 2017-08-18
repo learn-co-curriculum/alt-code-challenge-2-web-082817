@@ -4,6 +4,10 @@ class DriveIn
     @name = "Happy's Sunset Drive-In"
   end
 
+  def cars
+    MovieScreen.all_screens.map {|ms| ms.cars}.flatten
+  end
+
   def full_house
     MovieScreen.all_screens.all? {|screen| screen.at_capacity?}
   end
@@ -12,7 +16,4 @@ class DriveIn
     MovieScreen.all_screens.map {|ms| ms.movie}
   end
 
-  def cars
-    MovieScreen.all_screens.map {|ms| ms.cars}.flatten
-  end
 end
